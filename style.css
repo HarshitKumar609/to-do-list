@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(145deg, #3f4cba, #bd66cc, #6ba6b0);
+
+}
+
+.to-do-app {
+    max-width: 530px;
+    width: 100%;
+    padding: 40px 30px 70px;
+    background-color: #fff;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+img {
+    margin-left: 2px;
+    height: 20px;
+    width: 20px;
+}
+
+.inputdata {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color: #ff5945;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+}
+
+li {
+    list-style: none;
+    font-size: 17px;
+    user-select: none;
+    cursor: pointer;
+    padding: 12px 8px 12px 50px;
+    position: relative;
+}
+
+li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(/images/download.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 22px;
+    top: 11px;
+    left: 25px;
+}
+
+li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+li.checked::before {
+    background-image: url(/images/checked.png);
+}
+
+/* ul li span {
+    position: absolute;
+    color: #f60101;
+    text-align: center;
+    font-size: 26px;
+    top: 5px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    right: 0;
+
+} */
+
+.deleteIcon {
+    position: absolute;
+    right: 0px;
+}
+
+ul li span :hover {
+    background: #edeef0;
+}
+
+@media screen and (max-width: 400px) {
+    .inputdata {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #edeef0;
+        border-radius: 30px;
+        padding-left: 20px;
+        margin-bottom: 25px;
+    }
+
+    input {
+        flex: 1;
+        border: none;
+        outline: none;
+        background: transparent;
+        padding: 10px;
+    }
+
+    button {
+        border: none;
+        outline: none;
+        padding: 10px 30px;
+        background-color: #ff5945;
+        border-radius: 40px;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        position: relative;
+    }
+}
