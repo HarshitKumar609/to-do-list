@@ -81,7 +81,7 @@ li::before {
     height: 28px;
     width: 28px;
     border-radius: 50%;
-    background-image: url(/images/download.png);
+    background-image: url(./images/download.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-size: 22px;
@@ -95,7 +95,7 @@ li.checked {
 }
 
 li.checked::before {
-    background-image: url(/images/checked.png);
+    background-image: url(./images/checked.png);
 }
 
 /* ul li span {
